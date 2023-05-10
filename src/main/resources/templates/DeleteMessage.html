@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidate Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/AddedStudentInfo.css}" />
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card">
+        <h3> Deleted Student Id </h3>
+        <h4 th:text="${studentId}"> </h4>
+
+        <div class="button-container">
+            <a href="/registraion" class="button add-student-button">Add Student</a>
+            <a href="/allCandidates" class="button delete-student-button">View All Students</a>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

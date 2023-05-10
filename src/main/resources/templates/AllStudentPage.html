@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Student Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/AllCandidatePage.css}" />
+</head>
+<body>
+<div class="container">
+    <h3 class="centered">All Student information</h3>
+    <div class="button-container">
+        <a href="/registraion" class="button add-student-button">Add Student</a>
+        <a href="/deleteStudent" class="button delete-student-button">Delete Student</a>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Domain</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="c: ${candidateList}">
+            <td th:text="${c.id}"></td>
+            <td th:text="${c.name}"></td>
+            <td th:text="${c.domain}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

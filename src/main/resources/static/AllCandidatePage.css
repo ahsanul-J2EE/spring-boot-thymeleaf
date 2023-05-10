@@ -1,0 +1,68 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centered {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.button-container {
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: 2px solid #4CAF50;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #4CAF50;
+}
+
+.add-student-button {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.delete-student-button {
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 12px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
